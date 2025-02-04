@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 from streamlit_option_menu import option_menu
 from sklearn.preprocessing import StandardScaler
+import os
 
 # Set Streamlit page configuration
 st.set_page_config(
@@ -17,7 +18,7 @@ def load_model(filename):
     with open(filename, 'rb') as file:
         return pickle.load(file)
 
-diabetes_model = load_model("./models/diabetes_model (3).pkl")
+diabetes_model = load_model("C:\\2k25\\AICTE Diseases Breakout\\diabetes_model (3).pkl")
 heart_disease_model = load_model("C:\\2k25\\AICTE Diseases Breakout\\heart_disease_model.pkl")
 diabetes_scaler = load_model("C:\\2k25\\AICTE Diseases Breakout\\diabetes_scaler (3).pkl")  # Ensure scaler is saved
 heart_scaler = load_model("C:\\2k25\\AICTE Diseases Breakout\\heart_scaler.pkl")  # Save and load accordingly
