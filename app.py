@@ -17,7 +17,7 @@ def load_model(filename):
     with open(filename, 'rb') as file:
         return pickle.load(file)
 
-diabetes_model = load_model("C:\\2k25\\AICTE Diseases Breakout\\diabetes_model (3).pkl")
+diabetes_model = load_model("./models/diabetes_model (3).pkl")
 heart_disease_model = load_model("C:\\2k25\\AICTE Diseases Breakout\\heart_disease_model.pkl")
 diabetes_scaler = load_model("C:\\2k25\\AICTE Diseases Breakout\\diabetes_scaler (3).pkl")  # Ensure scaler is saved
 heart_scaler = load_model("C:\\2k25\\AICTE Diseases Breakout\\heart_scaler.pkl")  # Save and load accordingly
